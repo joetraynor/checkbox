@@ -1,18 +1,20 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
+  state = {
+    checkbox1: false,
+    checkbox2: false,
+    checkbox3: false
+  }
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <div className="outerDiv">
+        <h1 className="App-header">Checkbox Test</h1>
+        <form className="App">
+          <p>Checkbox</p>
+          <button>Submit</button>
+        </form>
       </div>
     );
   }
